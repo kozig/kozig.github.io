@@ -1,18 +1,16 @@
 ---
-title: Kozig's First Thought
+title: DaVinvi Shortcuts
 date: 2024-09-02 10:15 -500
 categories: [Thoughts] 
 tags: [thoughts] # Tags nees to need to be lowercase and comma seperated
 ---
-
-# DaVinvi Shortcuts
 
 Middle mouse button scrolls timeline
 Menu -> timeline -> Selection follows playhead
 Menu -> View -> Zoom around mouse pointer
 
 `CTRL-ALT+K` keyboard shortcuts
-`s`  To Split klip 
+`s`  To Split klip
 `q` ripple trim to previous/ start to playhead
 `w` ripple trim forward / end to playhead
 `f` Delete selected
