@@ -32,3 +32,4 @@ Freeze frame - add cut -> `shift+r` -> extend to desired length
 
 `alt+left-click` add keyframe
 `ctrl+[` insert keyframe under playhead
+wut
