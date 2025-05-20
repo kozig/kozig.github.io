@@ -1,8 +1,11 @@
 ---
-title: DaVinvi Shortcuts
-date: 2024-09-02 10:15 -500
-categories: [Thoughts] 
-tags: [thoughts] # Tags nees to need to be lowercase and comma seperated
+title: DaVinci Shortcuts
+date: 2025-05-20 10:15 -500
+categories:
+  - Video Editing
+tags:
+  - Davinci
+  - Video_Editiing
 ---
 
 Middle mouse button scrolls timeline
