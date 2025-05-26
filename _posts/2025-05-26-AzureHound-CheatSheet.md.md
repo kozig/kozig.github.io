@@ -8,7 +8,9 @@ List of Cypher queries to help analyze [AzureHound](https://github.com/BloodHou
 
 **Return All On-Prem users with edges to Azure**
 
-`MATCH  p=(m:User)-[r:AZResetPassword|AZOwns|AZUserAccessAdministrator|AZContributor|AZAddMembers|AZGlobalAdmin|AZVMContributor|AZOwnsAZAvereContributor]->(n) WHERE m.objectid CONTAINS 'S-1-5-21' RETURN p`
+``` neo4j 
+MATCH  p=(m:User)-[r:AZResetPassword|AZOwns|AZUserAccessAdministrator|AZContributor|AZAddMembers|AZGlobalAdmin|AZVMContributor|AZOwnsAZAvereContributor]->(n) WHERE m.objectid CONTAINS 'S-1-5-21' RETURN p
+```
 
 **Find all paths to an Azure VM**
 
