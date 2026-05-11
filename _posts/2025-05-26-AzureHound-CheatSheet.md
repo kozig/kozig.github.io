@@ -1,5 +1,5 @@
 ---
-tit: AzureHound CheatSheet
+title: AzureHound CheatSheet
 date: 2025-05-20 10:15 -500
 categories:
   - Azure

@@ -1,0 +1,16 @@
+---
+layout: page
+# Individual project detail page
+---
+
+{% if page.screenshot %}
+  <img class="project-hero" src="{{ page.screenshot | relative_url }}" alt="{{ page.title }} screenshot">
+{% endif %}
+
+<p class="project-meta">
+  {% if page.live_url %}<a class="project-meta__link" href="{{ page.live_url }}" target="_blank" rel="noopener">View live →</a>{% endif %}
+  {% if page.repo_url %}<a class="project-meta__link" href="{{ page.repo_url }}" target="_blank" rel="noopener">Source →</a>{% endif %}
+  {% if page.tech %}<span class="project-meta__tech">{{ page.tech | join: ' · ' }}</span>{% endif %}
+</p>
+
+{{ content }}
