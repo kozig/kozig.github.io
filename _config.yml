@@ -34,8 +34,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Goob Rosnin
-  email: goobrosnin@protonmail.com # change to your email address
+  name: Regular 3D Guy
+  email: info@regular3dguy.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://x.com/regular3dguy # change to your Twitter homepage
@@ -59,7 +59,7 @@ webmaster_verifications:
 # Web Analytics Settings
 analytics:
   google:
-    id: G-QX4PBPYN12 # fill in your Google Analytics ID
+    id: # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
