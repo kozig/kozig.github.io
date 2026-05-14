@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: Greg's Site # the main title
 
-tagline: Projects, Notes, Thoughts And Rants # it will display as the subtitle
+tagline: Projects, Notes, and Thoughts # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Just somethings we might find useful or interesting.
@@ -29,7 +29,7 @@ github:
   username: kozig # change to your GitHub username
 
 twitter:
-  username: regular3dguy # change to your Twitter username
+  # username: regular3dguy # change to your Twitter username
 
 social:
   # Change to your full name.
