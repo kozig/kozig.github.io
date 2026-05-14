@@ -46,25 +46,33 @@
   display: none !important;
 }
 
-/* Sidebar bottom row: keep mode toggle + social icons compact and on one line.
-   With 3+ entries Chirpy's default flex-wrap puts the toggle on its own row. */
+/* Sidebar bottom row: mode toggle is moved to the topbar (see .topbar-mode-toggle
+   below); hide it here but keep it in the DOM so Chirpy's existing click handler
+   stays bound. The proxy button in the topbar triggers .click() on it. */
 #sidebar .sidebar-bottom {
-  flex-wrap: nowrap !important;
   justify-content: center;
   gap: 0.35rem;
 
-  a,
-  #mode-toggle {
+  a {
     padding: 0.25rem 0.35rem;
     font-size: 0.95rem;
   }
 
-  #mode-toggle {
-    order: 99; /* push the light/dark toggle to the end of the row */
-  }
-
+  #mode-toggle,
   .icon-border {
-    display: none; /* separator unnecessary once toggle is at the end */
+    display: none !important;
+  }
+}
+
+/* Topbar mode toggle (proxies clicks to the hidden sidebar toggle) */
+#topbar .topbar-mode-toggle {
+  padding: 0 0.5rem;
+  color: inherit;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
   }
 }
 
