@@ -39,6 +39,28 @@
   display: none !important;
 }
 
+/* Sidebar bottom row: keep mode toggle + social icons compact and on one line.
+   With 3+ social links Chirpy's default flex-wrap puts the toggle on its own row. */
+#sidebar .sidebar-bottom {
+  flex-wrap: nowrap !important;
+  justify-content: center;
+  gap: 0.35rem;
+
+  a,
+  #mode-toggle {
+    padding: 0.25rem 0.35rem;
+    font-size: 0.95rem;
+  }
+
+  #mode-toggle {
+    order: 99; /* push the light/dark toggle to the end of the row */
+  }
+
+  .icon-border {
+    display: none; /* separator is unnecessary once toggle is at the end */
+  }
+}
+
 /* Portfolio landing */
 .portfolio-bio {
   margin-bottom: 2.5rem;
