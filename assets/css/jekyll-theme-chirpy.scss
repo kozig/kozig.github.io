@@ -1,7 +1,14 @@
 ---
 ---
 
-@import "main";
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
 
 /* Inline left-aligned search bar in the topbar.
    Overrides Chirpy's click-to-expand behavior so the input is always visible. */
@@ -20,7 +27,7 @@
   #search-input {
     background: transparent;
     border: 0;
-    border-bottom: 1px solid var(--search-border-color, rgba(0, 0, 0, 0.15));
+    border-bottom: 1px solid rgba(128, 128, 128, 0.35);
     border-radius: 0;
     padding: 0.2rem 0.25rem;
     box-shadow: none;
@@ -28,7 +35,7 @@
 
     &:focus {
       box-shadow: none;
-      border-bottom-color: var(--link-color, #1f7a3a);
+      border-bottom-color: currentColor;
     }
   }
 }
@@ -40,7 +47,7 @@
 }
 
 /* Sidebar bottom row: keep mode toggle + social icons compact and on one line.
-   With 3+ social links Chirpy's default flex-wrap puts the toggle on its own row. */
+   With 3+ entries Chirpy's default flex-wrap puts the toggle on its own row. */
 #sidebar .sidebar-bottom {
   flex-wrap: nowrap !important;
   justify-content: center;
@@ -57,7 +64,7 @@
   }
 
   .icon-border {
-    display: none; /* separator is unnecessary once toggle is at the end */
+    display: none; /* separator unnecessary once toggle is at the end */
   }
 }
 
