@@ -1,22 +1,27 @@
 ---
+layout: page
 title: Example App
-description: One- to two-sentence summary that shows up on the portfolio card. Keep it punchy.
-screenshot: /assets/img/projects/example-app.png
-live_url: https://example.com
-repo_url: https://github.com/kozig/example-app
-tech: [TypeScript, React, Postgres]
-status: Live
-order: 1
+description: One- to two-sentence summary that appears on the project card. Keep it punchy.
+img: assets/img/projects/example-app.png
+importance: 1
+category: web
 ---
 
 ## Overview
 
-Longer write-up about the project. What it does, who it's for, why you built it.
+Write a longer description of the project here — what it does, who it's for, what tech stack you used.
 
-## What I learned
+## Links
 
-Notes on tricky parts, decisions, what you'd do differently.
+- [Live demo](https://example.com)
+- [Source on GitHub](https://github.com/kozig/example-app)
 
 ## Screenshots
 
-![Feature view](/assets/img/projects/example-app.png)
+You can drop more images into `assets/img/projects/` and reference them via the figure include:
+
+{% raw %}
+```html
+{% include figure.liquid path="assets/img/projects/example-app-detail.png" class="img-fluid rounded" %}
+```
+{% endraw %}
