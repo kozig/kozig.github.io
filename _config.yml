@@ -7,7 +7,6 @@ first_name: Greg
 middle_name:
 last_name: Koziol
 contact_note: >
-  Reach me via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Projects, notes, and thoughts from Greg Koziol.
 footer_text: >
