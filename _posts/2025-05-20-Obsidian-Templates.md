@@ -1,11 +1,10 @@
 ---
+layout: post
 title: Obsidian Templates
-date: 2025-05-20 10:15 -500
-categories:
-  - Obsidian
-tags:
-  - Obsidian
-  - Obsidian_Templates
+date: 2025-05-20 10:15:00 -0500
+description: Using the Templater community plugin to generate dynamic titles and content in Obsidian.
+categories: obsidian
+tags: obsidian templates
 ---
 The core templating plugin seems very limited. Especially since there is no obvious way to generate a dynamic title. Therefore, the community plugin [Templater](https://silentvoid13.github.io/Templater/introduction.html) seems to fit the bill.  
 The following is an explanation on how to use the `tp.file` function:  

@@ -1,12 +1,10 @@
 ---
+layout: post
 title: AzureHound CheatSheet
-date: 2025-05-20 10:15 -500
-categories:
-  - Azure
-tags:
-  - bloodhound
-  - azure
-  - cheatsheet
+date: 2025-05-26 10:15:00 -0500
+description: Cypher queries for analyzing AzureHound data in the BloodHound GUI and the Neo4j console.
+categories: security
+tags: bloodhound azure cheatsheet
 ---
 
 List of Cypher queries to help analyze [AzureHound](https://github.com/BloodHoundAD/AzureHound) data. Queries under ‘GUI’ are intended for the [BloodHound](https://github.com/BloodHoundAD/BloodHound) GUI (Settings>Query Debug Mode). Queries under ‘Console’ are intended for the Neo4j console (usually located at [http://localhost:7474](http://localhost:7474/)). Download the ‘Custom Queries’ json file here: [https://github.com/hausec/Bloodhound-Custom-Queries](https://github.com/hausec/Bloodhound-Custom-Queries)

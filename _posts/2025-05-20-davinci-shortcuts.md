@@ -1,11 +1,10 @@
 ---
+layout: post
 title: DaVinci Shortcuts
-date: 2025-05-20 10:15 -500
-categories:
-  - Video Editing
-tags:
-  - Davinci
-  - Video_Editiing
+date: 2025-05-20 10:15:00 -0500
+description: A short list of DaVinci Resolve keyboard shortcuts I keep forgetting.
+categories: video-editing
+tags: davinci shortcuts
 ---
 
 Middle mouse button scrolls timeline  
