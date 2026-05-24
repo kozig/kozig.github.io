@@ -39,15 +39,21 @@ System dependency: **ImageMagick** must be installed locally for `jekyll-imagema
 
 ## Deploy pipeline
 
-`.github/workflows/deploy.yml` runs on push to `main`/`master`:
+`.github/workflows/deploy.yml` runs on push to `main`/`master`. Two jobs:
+
+**build:**
 1. Checks out the repo.
 2. Sets up Ruby 3.3.5 and Python 3.13 (Python is used by `nbconvert` for Jupyter notebook posts).
 3. `apt-get install imagemagick` + `pip3 install nbconvert`.
-4. `JEKYLL_ENV=production bundle exec jekyll build`.
-5. Runs purgecss against `_site/`.
-6. Pushes `_site/` to the **`gh-pages` branch** via `JamesIves/github-pages-deploy-action@v4`.
+4. `actions/configure-pages` resolves the Pages base URL.
+5. `JEKYLL_ENV=production bundle exec jekyll build`.
+6. Runs purgecss against `_site/`.
+7. `actions/upload-pages-artifact` uploads `_site/` as a Pages artifact.
 
-**Important:** al-folio's deploy expects GitHub Pages settings to be: **Source = Deploy from a branch**, **branch = `gh-pages`**, **folder = `/ (root)`**. This is different from how Chirpy was deployed (which used the "GitHub Actions" source). When merging the migration branch to `main`, update the repo's Pages settings before the first deploy, or it will fail to publish.
+**deploy:** (skipped on PRs)
+1. `actions/deploy-pages` publishes the artifact to GitHub Pages.
+
+GitHub Pages settings must be: **Source = GitHub Actions** (not "Deploy from a branch"). The workflow does not push a `gh-pages` branch — it uploads an artifact and publishes via the Pages API. This is the same source setting the Chirpy workflow used, so no settings change was needed during migration.
 
 ## Architecture notes that aren't obvious from a glance
 
@@ -99,4 +105,4 @@ Lower `importance` sorts first. `category` groups projects on the projects index
 - Don't enable `jekyll-scholar` features (citations, bibliography) unless asked — they require BibTeX setup and aren't part of this site's content model.
 - Don't add `_books/`, `_teachings/`, `_news/`, or `_bibliography/` content without asking — those are al-folio's academic features and adding files would surface them in the nav unintentionally.
 - Don't slim the Gemfile or remove unused plugins without testing builds end-to-end — many are referenced by includes that may not be obvious.
-- Don't push to `main` from the migration branch without first updating the GitHub Pages source setting on the repo (see Deploy pipeline above).
+- Don't change the GitHub Pages source away from **GitHub Actions** — the deploy workflow uploads an artifact and won't publish from a branch.
