@@ -58,9 +58,13 @@ GitHub Pages settings must be: **Source = GitHub Actions** (not "Deploy from a b
 ## Architecture notes that aren't obvious from a glance
 
 - **Pages = top-level routes.** Each `_pages/*.md` with `nav: true` becomes a navbar item, ordered by `nav_order`. Currently: `about.md` (landing, permalink `/`, layout `about`), `projects.md` (`/projects/`), `blog.md` (`/blog/`). `404.md` is the error page.
+- **Home page auto-shows recent posts.** `_pages/about.md` has `latest_posts.enabled: true` with `limit: 3`. Adding posts will surface them on the landing page automatically.
 - **Projects collection.** `_projects/*.md` files render into the projects page grid. Front-matter contract: `title`, `description` (card text), `img` (card background — path under `assets/img/`), `importance` (sort key — lower number = first), `category` (used by `display_categories` on the projects page for grouping). Body is the detail-page content.
 - **Posts.** Same `_posts/YYYY-MM-DD-slug.md` convention as Chirpy. al-folio expects `layout: post`, `date` with full timezone offset (`-0500`, not `-500`), and prefers space-separated tags/categories rather than YAML arrays (both work though).
 - **Socials are configured in `_data/socials.yml`,** not `_config.yml`. Uses the `jekyll-socials` plugin schema (e.g. `github_username`, `linkedin_username`). The "social: true" toggle in `_pages/about.md` front-matter controls whether they render on the home page.
+- **`_data/repositories.yml` still has al-folio placeholder content** (torvalds, alshedivat, etc.). Update `github_users` and `github_repos` with actual usernames/repos before the repositories page is used.
+- **`assets/json/resume.json` does not exist yet.** `_config.yml` references it via `jekyll_get_json` for a `/cv/` page. The file (and `assets/json/` directory) must be created before the CV feature works; format follows the JSON Resume schema.
+- **CI auto-patches `giscus.repo`** in `_config.yml` at build time to `${{ github.repository }}`. Don't set that value manually in the file — it gets overwritten every deploy.
 - **Lots of academic plumbing is still in the Gemfile and config** (`jekyll-scholar`, `_bibliography/`, `_data/cv.yml`, `_data/coauthors.yml`, etc.). These are dormant — no source files reference them — but the gems still install. They can be stripped later for faster builds; leave for now unless build times become painful.
 - **Collections declared in `_config.yml`** include `books`, `news`, `teachings`, `projects`. We only have `_projects/`. The others resolve to empty collections; Jekyll won't fail.
 - **`jekyll-archives-v2`** generates `/blog/:year/`, `/blog/tag/:name/`, `/blog/category/:name/` automatically from post front-matter — no source files for these.
