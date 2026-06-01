@@ -7,7 +7,7 @@ subtitle: Web apps, security write-ups, and the occasional video-editing tip.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
+  image_circular: false
   more_info:
 
 selected_papers: false # academic feature, disabled
