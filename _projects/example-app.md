@@ -18,10 +18,6 @@ This web application scrapes Life Labs blood work reports and sorts them chronol
 
 ## Screenshots
 
-You can drop more images into `assets/img/projects/` and reference them via the figure include:
-
-{% raw %}
-
 {% include figure.liquid path="assets/img/projects/Blood_Work_Analysis.png" class="img-fluid rounded" %}
 
-{% endraw %}
+{% include figure.liquid path="assets/img/projects/Blood_Work_Trends.png" class="img-fluid rounded" %}
