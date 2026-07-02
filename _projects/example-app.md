@@ -2,7 +2,7 @@
 layout: page
 title: Blood Work Reports
 description: Flask app for extracting and visualizing Life Labs blood work reports, seeing trends over time.
-img: assets/img/projects/example-app.png
+img: assets/img/projects/Blood_Work_Analysis.png
 importance: 1
 category: web
 ---
