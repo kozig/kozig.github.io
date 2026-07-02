@@ -13,7 +13,7 @@ This web application scrapes Life Labs blood work reports and sorts them chronol
 
 ## Links
 
-- [Live demo](https://reports.regular3dguy.com.com)
+- [Live demo](https://reports.regular3dguy.com)
 - [Source on GitHub](https://github.com/kozig/blood-work)
 
 ## Screenshots
