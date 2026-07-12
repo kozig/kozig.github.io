@@ -6,11 +6,13 @@ description: A short list of DaVinci Resolve keyboard shortcuts I keep forgettin
 categories: video-editing
 tags: davinci shortcuts
 ---
-
+### Settings
 Middle mouse button scrolls timeline  
 Menu -> timeline -> Selection follows playhead  
 Menu -> View -> Zoom around mouse pointer  
+Freeze frame - add cut -> `shift+r` -> extend to desired length  
 
+### Keybinds
 `CTRL-ALT+K` keyboard shortcuts  
 `s`  To Split klip  
 `q` ripple trim to previous/ start to playhead  
@@ -21,7 +23,6 @@ Menu -> View -> Zoom around mouse pointer
 `ctrl+shift+D` Add transition  
 `Alt+T` Video only transition  
 
-Freeze frame - add cut -> `shift+r` -> extend to desired length  
 
 `N` new compound clip / nest clip - combine cut up clips  
 `1` reverse / RR playback  
