@@ -29,9 +29,9 @@ Freeze frame - add cut -> `shift+r` -> extend to desired length
 `2` Stop  
 `3` Play / FF  
 
-**Via AutoHotKey:**(Davinci.ahk)  
-`Shift+3` Move playhead forward 5 frames  
-`Shift+1` Move Playhead back 5   
+~~**Via AutoHotKey:**(Davinci.ahk)~~  
+~~`Shift+3` Move playhead forward 5 frames~~  
+~~`Shift+1` Move Playhead back 5~~   
 
-`alt+left-click` add keyframe  
-`ctrl+[` insert keyframe under playhead  
+~~`alt+left-click` add keyframe~~  
+~~`ctrl+[` insert keyframe under playhead~~  
