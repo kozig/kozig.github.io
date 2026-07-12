@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Greg's Site # the website title (if blank, full name will be used instead)
-first_name: Greg
+title: Regular 3D Guy # the website title (if blank, full name will be used instead)
+first_name: Goob
 middle_name:
-last_name: Koziol
+last_name: Rosnin
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Projects, notes, and thoughts from Greg Koziol.
