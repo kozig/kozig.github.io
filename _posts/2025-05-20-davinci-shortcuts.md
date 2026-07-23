@@ -14,11 +14,12 @@ Freeze frame - add cut -> `shift+r` -> extend to desired length
 
 ### Keybinds
 `CTRL-ALT+K` keyboard shortcuts  
-`s`  To Split klip  
+`s`  To Split klip  (when in keyframes window s applies easing)
 `q` ripple trim to previous/ start to playhead  
 `w` ripple trim forward / end to playhead  
 `f` Delete selected  
 `esc` Zoom to fit  
+`shift-G` view guides
 `shift-T` audio only transition  
 `ctrl+shift+D` Add transition  
 `Alt+T` Video only transition  
