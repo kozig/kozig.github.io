@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: Regular 3D Guy # the website title (if blank, full name will be used instead)
-first_name: Goob
+first_name: Greg
 middle_name:
-last_name: Rosnin
+last_name: Koziol
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Projects, notes, and thoughts from Greg Koziol.
