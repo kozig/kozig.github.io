@@ -7,6 +7,7 @@ subtitle: Web apps, security write-ups, and the occasional video-editing tip.
 profile:
   align: right
   image: prof_pic.jpg
+  image_alt: profile_photo
   image_circular: false
   more_info:
 

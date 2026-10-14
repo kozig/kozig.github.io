@@ -3,6 +3,7 @@ layout: page
 title: Blood Work Reports
 description: Flask app for extracting and visualizing Life Labs blood work reports, seeing trends over time.
 img: assets/img/projects/Blood_Work_Analysis.png
+img_alt: bloodwork_app_screenshot
 importance: 1
 category: web
 ---
@@ -18,6 +19,6 @@ This web application scrapes Life Labs blood work reports and sorts them chronol
 
 ## Screenshots
 
-{% include figure.liquid path="assets/img/projects/Blood_Work_Analysis.png" class="img-fluid rounded" %}
+{% include figure.liquid path="assets/img/projects/Blood_Work_Analysis.png" class="img-fluid rounded" alt="screenshot1_of_bloodwork_app" %}
 
-{% include figure.liquid path="assets/img/projects/Blood_Work_Trends.png" class="img-fluid rounded" %}
+{% include figure.liquid path="assets/img/projects/Blood_Work_Trends.png" class="img-fluid rounded" alt="screenshot2_of_bloodwork_app" %}

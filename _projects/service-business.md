@@ -3,6 +3,7 @@ layout: page
 title: Service Business Static Site
 description: Simple static site
 img: assets/img/projects/wallinstall.png
+img_alt: service_site_screenshot
 importance: 1
 category: web
 ---
@@ -23,6 +24,6 @@ Simple static site for small service business with a simple web form that submit
 
 ## Screenshots
 
-{% include figure.liquid path="assets/img/projects/wallinstall.png" class="img-fluid rounded" %}
+{% include figure.liquid path="assets/img/projects/wallinstall.png" class="img-fluid rounded" alt="screenshot1_of_service_business" %}
 
-{% include figure.liquid path="assets/img/projects/wallinstall_form.png" class="img-fluid rounded" %}
+{% include figure.liquid path="assets/img/projects/wallinstall_form.png" class="img-fluid rounded" alt="screenshot2_of_service_business" %}
